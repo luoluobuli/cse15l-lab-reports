@@ -3,8 +3,8 @@ hello world!
 **test**
 # test
 ## test
-[Link] (https://ucsd-cse15l-w24.github.io/week1/index.html)
-![Image] (https://upload.wikimedia.org/wikipedia/en/c/c2/Power_%28Chainsaw_Man%29.png)
+[Course Page](https://ucsd-cse15l-w24.github.io/week1/index.html)
+![Power](https://upload.wikimedia.org/wikipedia/en/c/c2/Power_%28Chainsaw_Man%29.png)
 > test
 
 * test1
