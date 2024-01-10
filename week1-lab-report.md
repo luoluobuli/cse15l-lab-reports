@@ -1,5 +1,4 @@
 # Lab Report 1
----
 ## Examples of using `cd`
 * with no arguments
 ```
