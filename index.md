@@ -2,4 +2,4 @@
 
 ![Power](https://upload.wikimedia.org/wikipedia/en/c/c2/Power_%28Chainsaw_Man%29.png)
 
-[Lab Report 1](https://luoluobuli.github.io/cse15l-lab-reports/week1-lab-report)
+[Lab Report 1](https://luoluobuli.github.io/Lab1/LabReport1)
