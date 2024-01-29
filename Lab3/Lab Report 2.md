@@ -89,7 +89,7 @@ public class Server {
 ### Screenshot 1
 ![Image](scrnsht1.png)
 * The method **handleRequest** is called.
-* The argument is https://0-0-0-0-3456-kflm3rfliiamfqp20rihnlv1lg.us.edusercontent.com/add-message?s=hello&user=x, and the part **add-message?s=hello&user=x** is what relevant to the output.
+* The argument is "https://0-0-0-0-3456-kflm3rfliiamfqp20rihnlv1lg.us.edusercontent.com/add-message?s=hello&user=x", and the part **add-message?s=hello&user=x** is what relevant to the output.
 * Relevant fields include:
   * parameters = ["s=hello", "user=x"]
   * s = "hello"
@@ -101,7 +101,7 @@ public class Server {
 ### Screenshot 2
 ![Image](scrnsht2.png)
 * The method **handleRequest** is called.
-* The argument is https://0-0-0-0-3456-kflm3rfliiamfqp20rihnlv1lg.us.edusercontent.com/add-message?s=what&user=y, and the part **add-message?s=what&user=y** is what relevant to the output.
+* The argument is "https://0-0-0-0-3456-kflm3rfliiamfqp20rihnlv1lg.us.edusercontent.com/add-message?s=what&user=y", and the part **add-message?s=what&user=y** is what relevant to the output.
 * Relevant fields include:
   * parameters = ["s=what", "user=y"]
   * s = "what"
