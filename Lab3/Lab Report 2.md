@@ -121,4 +121,6 @@ public class Server {
 ![Image](scrnsht5.png)
 
 ## Part 3
-In Lab 2 and 3, I learned about how to create my own server in java. I learned what URI is and how it is implemented in my code. Also, I knew more commands such as `mkdir` and `scp`.
+In Lab 2 and 3, I learned about how to create my own server in java. I learned what URI is and how it is implemented in my code. What I found pretty exciting is that we can actually call the methods by editing the url itself, and this is definitely something new to me.
+<br>I actually learned about ssh before in another class, so for this part I feel pretty comfortable.
+<br>I look forward to explore more about software techniques in the future classes! :)
