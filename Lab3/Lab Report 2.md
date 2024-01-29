@@ -109,3 +109,16 @@ public class Server {
   * addedLine = "y: what\n"
   * arr = ["x: hello\n", "y: what\n"]
 * The fields inside **handleRequest** method including **parameters**, **s**, **user**, and **addedLine** are changed by the specific strings from the argument. The fields of **Handler** class **arr** originally contains one element **"x: hello\n"** appended by the previous call of the method, and after it is called this time, the new value of **addedLine**, which is **"y: what\n"**, is appended to the ArrayList.
+
+## Part 2
+* The absolute path to the private key: *C:\Users\86130\.ssh\id_ed25519*
+![Image](scrnsht3.png)
+
+* The absolute path to the public key: *~\.ssh\authorized_keys*
+![Image](scrnsht4.png)
+
+* Terminal interaction
+![Image](scrnsht5.png)
+
+## Part 3
+In Lab 2 and 3, I learned about how to create my own server in java. I learned what URI is and how it is implemented in my code. Also, I knew more commands such as `mkdir` and `scp`.
