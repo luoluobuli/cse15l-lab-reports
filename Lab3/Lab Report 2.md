@@ -41,3 +41,4 @@ class CharServer {
 ```
 
 Screenshot 1
+![Image](screenshot1.png)
