@@ -29,7 +29,7 @@ public class ArrayExamples {
    ```
 3. The symptom, as the output of running the tests
    ![Image](Screenshot.png)
-4. The bug, as the before-and-after code change required to fix it
+4. The bug, as the before-and-after code change required to fix it  
    Before:
    ```
    static void reverseInPlace(int[] arr) {
@@ -50,3 +50,5 @@ public class ArrayExamples {
      }
    }
    ```
+   Explanation:
+   In reverseInPlace(), when we replace the data in index i with another that in another index, the original data is lost and we can not get any of the first half of original data in this way. To fix this, I created a new array to store everything in reversed order, and then copied everything from the new array to the original one. In this way, the data inside the array can be correctly reversed. 
