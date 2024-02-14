@@ -202,7 +202,7 @@ $ grep -h "world" plos/*.txt
 ```
 
 **Use -l as the option:**  
-It displays list of a filenames that include the pattern of characters. It is useful when I only want to find the files that contain the keyword. For example, if I want to find the articles about New York in a bunch of newspapers, I can use this option to get the newspapers I need.
+It displays list of a filenames that include the pattern of characters. It is useful when I only want to find the files that contain the keyword. For example, if I want to find the articles about New York within a bunch of newspapers, I can use this option to get the newspapers I need.
 ```
 $ grep -l "world" biomed/*.txt
 biomed/1471-2091-2-12.txt
@@ -218,20 +218,6 @@ biomed/gb-2003-4-9-r58.txt
 biomed/rr37.txt
 ```
 ```
-$ grep -l "world" biomed/*.txt
-biomed/1471-2091-2-12.txt
-biomed/1471-2091-2-16.txt
-biomed/1471-2105-2-8.txt
-biomed/1471-213X-1-15.txt
-biomed/1471-2148-1-8.txt
-...
-biomed/gb-2003-4-2-r9.txt
-biomed/gb-2003-4-4-r28.txt
-biomed/gb-2003-4-6-r39.txt
-biomed/gb-2003-4-9-r58.txt
-biomed/rr37.txt
-
-86130@DESKTOP-ASANJ3U MINGW64 /d/24winter/CSE 15L/Lab5/docsearch/technical (main)
 $ grep -l "world" plos/*.txt
 plos/journal.pbio.0020001.txt
 plos/journal.pbio.0020010.txt
@@ -247,7 +233,7 @@ plos/pmed.0020281.txt
 ```
 
 **Use -o as the option:**  
-It prints only the matched parts of a matching line, with each such part on a separate output line. It is useful to find the certain files with the same reason as -l I wrote above. I think the matched parts printed may increase the clarity when using grep with multiple keywords. 
+It prints only the matched parts of a matching line, with each such part on a separate output line. It is useful to find the certain files with the same reason as -l I wrote above. I think the matched parts printed may increase the clarity when using grep multiple times with different keywords. 
 ```
 $ grep -o "world" biomed/*.txt
 biomed/1471-2091-2-12.txt:world
