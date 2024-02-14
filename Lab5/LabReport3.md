@@ -28,5 +28,25 @@ public class ArrayExamples {
    }
    ```
 3. The symptom, as the output of running the tests
-   
-4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+   !Image[Screenshot.png]
+4. The bug, as the before-and-after code change required to fix it
+   Before:
+   ```
+   static void reverseInPlace(int[] arr) {
+     for(int i = 0; i < arr.length; i += 1) {
+       arr[i] = arr[arr.length - i - 1];
+     }
+   }
+   ```
+   After:
+   ```
+   static void reverseInPlace(int[] arr) {
+     int[] temArray = new int[arr.length];
+     for(int i = 0; i < arr.length; i += 1) {
+       temArray[i] = arr[arr.length - i - 1];
+     }
+     for(int i = 0; i < arr.length; i += 1) {
+       arr[i] = temArray[i];
+     }
+   }
+   ```
