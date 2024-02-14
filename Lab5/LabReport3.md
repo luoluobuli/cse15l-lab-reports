@@ -58,7 +58,7 @@ public class ArrayExamples {
 **Source:** [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)  
 **Note:** Some outputs are super long. For the sake of brevity and readability, I only keep the first and last several lines of them.  
 **Use -h as the option:**  
-It displays the block of all matched lines, but not the filenames.
+It displays the block of all matched lines, but not the filenames. It is useful when I only want to get the sentences that contain the keyword, maybe for research purpose.
 ```
 $ grep -h "world" biomed/*.txt
         sold commericially and used as a biopesticide worldwide for
@@ -202,7 +202,7 @@ $ grep -h "world" plos/*.txt
 ```
 
 **Use -l as the option:**  
-It displays list of a filenames that include the pattern of characters.
+It displays list of a filenames that include the pattern of characters. It is useful when I only want to find the files that contain the keyword. For example, if I want to find the articles about New York in a bunch of newspapers, I can use this option to get the newspapers I need.
 ```
 $ grep -l "world" biomed/*.txt
 biomed/1471-2091-2-12.txt
@@ -247,7 +247,7 @@ plos/pmed.0020281.txt
 ```
 
 **Use -o as the option:**  
-It prints only the matched parts of a matching line, with each such part on a separate output line.
+It prints only the matched parts of a matching line, with each such part on a separate output line. It is useful to find the certain files with the same reason as -l I wrote above. I think the matched parts printed may increase the clarity when using grep with multiple keywords. 
 ```
 $ grep -o "world" biomed/*.txt
 biomed/1471-2091-2-12.txt:world
@@ -278,7 +278,7 @@ plos/pmed.0020281.txt:world
 ```
 
 **Use -n as the option:**  
-It displays the matched lines and their line numbers.
+It displays the matched lines and their line numbers. It is useful when we need to cite the sentence that contains the keyword. 
 ```
 $ grep -n "world" biomed/*.txt
 biomed/1471-2091-2-12.txt:8:        sold commericially and used as a biopesticide worldwide for
