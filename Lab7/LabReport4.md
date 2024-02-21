@@ -12,4 +12,11 @@ I named the forked repository to cse15l-lab7, so I typed `cs` and `<tab>` to sea
 **Key pressed:** `vim Li<tab>.java<enter>` `r2` `:wq<enter>`  
 I typed `Li` to search for `ListExamples.java` and `ListExamples` pop out so I typed `.java` to complete it. For some reason the cursor was already on the character I needed to edit, so I directly pressed r2 to change index1 to index2.
 ### Step5: Run the tests, demonstrating that they now succeed
+**Key pressed:** `bash test.sh<enter>`  
 ### Step6: Commit and push the resulting change to your Github account (you can pick any commit message!)
+**Key pressed:** `Ctrl R` `add<enter>`  
+I searched for the command `git add ListExamples.java` I executed earlier in the command history.
+**Key pressed:** `Ctrl R` `commi<enter>`  
+I searched for the command `git commit -m "change index1 to index2"` I executed earlier in the command history.
+**Key pressed:** `Ctrl R` `push<enter>`  
+I searched for the command `git push -u origin main` I executed earlier in the command history.
