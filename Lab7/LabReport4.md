@@ -10,7 +10,7 @@ I searched for the command `git clone git@github.com:luoluobuli/cse15l-lab7.git`
 ### Step3: Run the tests, demonstrating that they fail
 ![Image](screenshot3.png)  
 **Key pressed:** `cd cs<tab><enter>` `bash test.sh<enter>`  
-I named the forked repository to cse15l-lab7, so I typed `cs` and `<tab>` to search for the directory. After that, I entered the bash script to run the test.
+I named the forked repository as cse15l-lab7, so I typed `cs` and `<tab>` to search for the directory. After that, I entered the bash script to run the test.
 ### Step4: Edit the code file to fix the failing test
 ![Image](screenshot4-1.png)  
 ![Image](screenshot4-2.png)  
