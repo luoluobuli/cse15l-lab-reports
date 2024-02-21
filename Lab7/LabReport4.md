@@ -10,6 +10,6 @@ I searched for the command `git clone git@github.com:luoluobuli/cse15l-lab7.git`
 I named the forked repository to cse15l-lab7, so I typed `cs` and `<tab>` to search for the directory. After that, I entered the bash script to run the test.
 ### Step4: Edit the code file to fix the failing test
 **Key pressed:** `vim Li<tab>.java<enter>` `r2` `:wq<enter>`  
-I typed `Li` to search for `ListExamples.java` and `ListExamples` pop out so I typed `.java` to complete it. For some reason the cursor is already on the letter I need to edit, so I directly called r2 to change index1 to index2.
+I typed `Li` to search for `ListExamples.java` and `ListExamples` pop out so I typed `.java` to complete it. For some reason the cursor was already on the character I needed to edit, so I directly pressed r2 to change index1 to index2.
 ### Step5: Run the tests, demonstrating that they now succeed
 ### Step6: Commit and push the resulting change to your Github account (you can pick any commit message!)
