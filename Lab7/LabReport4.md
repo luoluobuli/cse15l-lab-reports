@@ -15,8 +15,8 @@ I typed `Li` to search for `ListExamples.java` and `ListExamples` pop out so I t
 **Key pressed:** `bash test.sh<enter>`  
 ### Step6: Commit and push the resulting change to your Github account (you can pick any commit message!)
 **Key pressed:** `Ctrl R` `add<enter>`  
-I searched for the command `git add ListExamples.java` I executed earlier in the command history.
+I searched for the command `git add ListExamples.java` I executed earlier in the command history.  
 **Key pressed:** `Ctrl R` `commi<enter>`  
-I searched for the command `git commit -m "change index1 to index2"` I executed earlier in the command history.
+I searched for the command `git commit -m "change index1 to index2"` I executed earlier in the command history.  
 **Key pressed:** `Ctrl R` `push<enter>`  
 I searched for the command `git push -u origin main` I executed earlier in the command history.
