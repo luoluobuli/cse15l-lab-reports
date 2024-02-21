@@ -28,7 +28,7 @@ This command runs the tests by running the bash script again.
 ![Image](screenshot6.png)  
 **Key pressed:** `Ctrl R` `add<enter>`  
 I searched for the command `git add ListExamples.java` I executed earlier in the command history.  
-This command adds the updated ListExample.java to staging.  
+This command adds updated ListExample.java to staging.  
 **Key pressed:** `Ctrl R` `commi<enter>`  
 I searched for the command `git commit -m "change index1 to index2"` I executed earlier in the command history.  
 This command is used to commit my change.  
