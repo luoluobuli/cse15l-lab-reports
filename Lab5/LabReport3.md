@@ -151,7 +151,7 @@ biomed/gb-2003-4-6-r39.txt
 biomed/gb-2003-4-9-r58.txt
 biomed/rr37.txt
 ```
-In this example, I use `grep -l` to find all files in **biomed** directory that contains the word "world." It is useful when I want to find a specific file that contain this word, and listing the filenames can help me find the file quickly.
+In this example, I used `grep -l` to find all files in **biomed** directory that contain the word "world." It is useful when I want to find a specific file that contain this word in biomed directory, and listing the filenames can help me find the file quickly.
 ```
 $ grep -l "world" plos/*.txt
 plos/journal.pbio.0020001.txt
@@ -166,10 +166,9 @@ plos/pmed.0020268.txt
 plos/pmed.0020274.txt
 plos/pmed.0020281.txt
 ```
-In this example, I use `grep -l` to find all files in **plos** directory that contains the word "world." Again, it is useful when I want to find a specific file in the folder that contain the word. 
+In this example, I used `grep -l` to find all files in **plos** directory that contain the word "world." Again, it is useful when I want to find a specific file in plos directory that contain the word. 
 
 **Use -o as the option:**  
-It prints only the matched parts of a matching line, with each such part on a separate output line. It is useful to find the certain files with the same reason as -l I wrote above. I think the matched parts printed may increase the clarity when using grep multiple times with different keywords. 
 ```
 $ grep -o "world" biomed/*.txt
 biomed/1471-2091-2-12.txt:world
@@ -184,6 +183,7 @@ biomed/gb-2003-4-6-r39.txt:world
 biomed/gb-2003-4-9-r58.txt:world
 biomed/rr37.txt:world
 ```
+In this example, I used `grep -o` to find all files in **biomed** directory that contain the word "world." It is quite similar like `-l`, instead that the command also prints out the text I'm searching for. It is useful when I need to find the files containing this word in biomed directory and if I also search for several other texts. The word printed at the end will prevent confusion. 
 ```
 $ grep -o "world" plos/*.txt
 plos/journal.pbio.0020001.txt:world
@@ -198,9 +198,9 @@ plos/pmed.0020274.txt:world
 plos/pmed.0020281.txt:world
 plos/pmed.0020281.txt:world
 ```
+In this example, I used `grep -o` to find all files in **plos** directory that contain the word "world." Also, the command prints out the text I'm searching for. It is useful when I need to find the files containing this word and if I also search for several other texts. The searching word printed at the end will prevent confusion. 
 
-**Use -n as the option:**  
-It displays the matched lines and their line numbers. It is useful when we need to cite the sentence that contains the keyword. 
+**Use -n as the option:**   
 ```
 $ grep -n "world" biomed/*.txt
 biomed/1471-2091-2-12.txt:8:        sold commericially and used as a biopesticide worldwide for
@@ -215,6 +215,7 @@ biomed/gb-2003-4-6-r39.txt:17:        damage worldwide [ 2 ] . The most damaging
 biomed/gb-2003-4-9-r58.txt:153:        Africa, where nearly 90% of the world's malaria-specific
 biomed/rr37.txt:517:        increasing in the USA and around the world, the minority of
 ```
+In this example, I used `grep -n` to find all files in **biomed** directory that contain "world," and it also printed out the specific lines that include the word. It is useful when I need to find the article that contains "world" and maybe wanna cite it in my own essay or stuff. If I want to access the article and read the context of this sentence, printing out the # of lines would help a lot. 
 ```
 $ grep -n "world" plos/*.txt
 plos/journal.pbio.0020001.txt:9:        the world scientific community closer to each other (Annan 2003). Mr. Annan stressed the
@@ -229,3 +230,4 @@ plos/pmed.0020274.txt:42:        observed for other respiratory viruses. But the
 plos/pmed.0020281.txt:23:        In the lonely and, at times, discouraging world of whistleblowing, we whistleblowers are
 plos/pmed.0020281.txt:35:        2005): “To leave the world a bit better, whether by a healthy child, a garden patch or a
 ```
+In this example, I used `grep -n` to find all files in **plos** directory that contain "world," and it also printed out the specific lines that include the word. It is useful because of the same reason. If I want to access the sentence in an article that contains "world" in plos directory and read its context, this command would help a lot. 
