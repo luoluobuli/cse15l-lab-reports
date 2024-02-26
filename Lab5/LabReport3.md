@@ -58,7 +58,6 @@ public class ArrayExamples {
 **Source:** [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)  
 **Note:** Some outputs are super long. For the sake of brevity and readability, I only keep the first and last several lines of them.  
 **Use -h as the option:**  
-It displays the block of all matched lines, but not the filenames. It is useful when I only want to get the sentences that contain the keyword, maybe for research purpose.
 ```
 $ grep -h "world" biomed/*.txt
         sold commericially and used as a biopesticide worldwide for
@@ -78,47 +77,7 @@ $ grep -h "world" biomed/*.txt
         psychiatric disorders each affecting about 1% of the world
         phases of the evolution of the protein world, and
         around the world can be sequenced.
-        Today, an estimated one-third of the world's population
-        pressing in third world countries, where demographics and
-        parasites throughout the world, a need for a fundamental
-        was practiced with sporadic successes worldwide in the
-        represent an enormous health problem for children worldwide
-        Brucellosis is a worldwide zoonotic disease caused by a
-        world. In those countries where the disease has been
-        world experiencing high incidence of brucellosis may not
-        brucellosis outbreaks worldwide.
-        human and economic toll it exacts throughout the world, the
-        experienced by children, affecting up to 5% of the world's
-        murine taste world in many ways differs from that of
-        that affect a large number of people all over the world. It
-        for 400,000 births world-wide annually.
-        world. Despite the existence of substantial diversity among
-        sets and its easy-to-use, TOF-Guard is worldwide no longer
-        to US$ 27 for two test in developed world. These prices
-        Smallpox, while not found in the world's population at
-        LYA, as Project Director for the NIDDK, is a world
-        population. Hence, for areas of the world that do not have
-        of death in women 30 to 70 years of age in the world.
         ...
-            and that the whole world of medical research and
-          about the external world face the tribunal of sense
-        in applications to real world signals. The trap in this
-        developed world [ 3 ] , is in particular tied to that of
-        world" and their impact on the work environment. [ 7 ]
-        critically ill patients throughout the developed world.
-        a matter of worldwide concern. Selective pressure by
-        worldwide [ 1 2 ] . CC arises by distinct morphologic
-        in India is second highest in the world. Among males the
-        disease of unknown etiology. Its worldwide prevalence is
-        world-renowned orthopedic hospital treating difficult cases
-        adult individuals worldwide. Primary FLS cultures can be
-        cancer capital of the world' [ 3 ] , and heightened
-        world and is now the most common cancer in Nigeria [ 1 2 3
-        breast cancer rates in the world [ 1 2 ] . Within this
-        the United States and worldwide [ 1 ] . While cures are
-        Throughout the world, the shortage of donor organs has
-        With the increasing worldwide availability of liver
-        infection [ 1]. The incidence of sepsis worldwide is on the
           is a function of the prevalence of trauma in our world
         surgeons worldwide. During the 1980s and 1990s in the USA,
         the world. It is found in 50-80% of some populations [ 27].
@@ -139,6 +98,7 @@ $ grep -h "world" biomed/*.txt
         Africa, where nearly 90% of the world's malaria-specific
         increasing in the USA and around the world, the minority of
 ```
+In this example, I used `grep -h` to get all lines including the text "world" from all txt files in **biomed** directory. It is useful when I want to know about, say, the influential biomed facts in the articles, such as a worldwide application or impact on the world, and I can view the information altogether. 
 ```
 $ grep -h "world" plos/*.txt
         the world scientific community closer to each other (Annan 2003). Mr. Annan stressed the
@@ -152,33 +112,7 @@ $ grep -h "world" plos/*.txt
         North America accounted for 62% of the publications worldwide. Within the Americas,
         examined it in respect to worldwide publications. In this case, the United States
         (Swinbanks et al. 1997) and thus could be a general phenomenon in the developing world.
-        Although there are outstanding scientific researchers in the developing world who
-        and that the top journals, which are published in the developed world, respond more to the
-        locally in the developing world is overlooked. But it takes more than publishing good
-        meetings for researchers in the developing compared with the developed world.
-        developing world (Goldemberg 1998; Annan 2003). One is that science, as a discipline, would
-        benefit from the contributions of many disparate groups around the world, rather than being
-        critical for the developing world to promote, through research and publications, those
-        industrialized world. This has been the case for research on renewable energy sources in
-        examples are important not only for those regions of the developing world, but are also in
-        world.
         ...
-        Increased attention should be paid to these diseases not just in the developed world,
-        but also in the developing world, where the unfinished agendas on communicable disease and
-        There are 300 million cases of malaria each year worldwide, causing one million deaths.
-        Around two-fifths of the world's population are now at risk of the disease (one estimate
-        worldwide. Of all the different virus subtypes (A, B, C, D, F, G, H, J, and K) and a
-        world. Antiretroviral drugs were developed by studying subtype B, and most data on the
-        genetic mechanisms of HIV drug resistance are also from subtype B. However, worldwide,
-        PLoS Medicine , Rami Kantor and colleagues from a worldwide collaboration
-        certainly stretch far back into antiquity. In the developed world, medical schools are now
-        from the pharmaceutical industry and the importance of students worldwide having unfettered
-        worldwide, about 30% of total global deaths. Many of these deaths could be prevented by
-        proportion of the world's population living in low-income and middle-income countries
-        developing world; as a result, low-income and middle-income countries will simultaneously
-        interventions are pursued, we will face a world in which all major diseases are the
-        heterogeneity of the HIV-infected population. The most important “real world” result is
-        in this role to serve the world's varying biomedical researchers and clinicians?
         For example, 55 institutions worldwide have so far signed the Berlin Declaration on Open
         remains the second major cause of preventable death in the world and fourth most common
         risk factor for disease worldwide [59]. While tobacco is clearly a worldwide concern,
@@ -200,6 +134,7 @@ $ grep -h "world" plos/*.txt
         In the lonely and, at times, discouraging world of whistleblowing, we whistleblowers are
         2005): “To leave the world a bit better, whether by a healthy child, a garden patch or a
 ```
+In this example, I used `grep -h` to get all lines including the text "world" from all txt files in **plos** directory. It is useful when I want to know about the science articles about introducing about world topics and so I can view the information altogether. 
 
 **Use -l as the option:**  
 It displays list of a filenames that include the pattern of characters. It is useful when I only want to find the files that contain the keyword. For example, if I want to find the articles about New York within a bunch of newspapers, I can use this option to get the newspapers I need.
