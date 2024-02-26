@@ -137,7 +137,6 @@ $ grep -h "world" plos/*.txt
 In this example, I used `grep -h` to get all lines including the text "world" from all txt files in **plos** directory. It is useful when I want to know about the science articles about introducing about world topics and so I can view the information altogether. 
 
 **Use -l as the option:**  
-It displays list of a filenames that include the pattern of characters. It is useful when I only want to find the files that contain the keyword. For example, if I want to find the articles about New York within a bunch of newspapers, I can use this option to get the newspapers I need.
 ```
 $ grep -l "world" biomed/*.txt
 biomed/1471-2091-2-12.txt
@@ -152,6 +151,7 @@ biomed/gb-2003-4-6-r39.txt
 biomed/gb-2003-4-9-r58.txt
 biomed/rr37.txt
 ```
+In this example, I use `grep -l` to find all files in **biomed** directory that contains the word "world." It is useful when I want to find a specific file that contain this word, and listing the filenames can help me find the file quickly.
 ```
 $ grep -l "world" plos/*.txt
 plos/journal.pbio.0020001.txt
@@ -166,6 +166,7 @@ plos/pmed.0020268.txt
 plos/pmed.0020274.txt
 plos/pmed.0020281.txt
 ```
+In this example, I use `grep -l` to find all files in **plos** directory that contains the word "world." Again, it is useful when I want to find a specific file in the folder that contain the word. 
 
 **Use -o as the option:**  
 It prints only the matched parts of a matching line, with each such part on a separate output line. It is useful to find the certain files with the same reason as -l I wrote above. I think the matched parts printed may increase the clarity when using grep multiple times with different keywords. 
