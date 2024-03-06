@@ -13,13 +13,13 @@ This command clones the repository from github to the local working directory.
 ![Image](screenshot3.png)  
 **Key pressed:** `cd cs<tab><enter>` `bash test.sh<enter>`  
 I named the forked repository as cse15l-lab7, so I typed `cs` and `<tab>` to search for the directory. After that, I entered the bash script to run the test.  
-`cd` changes the working directory to csel-lab7, and `bash` executes the bash script test.sh which compiles and runs ListExamplesTests.java.
+`cd` changes the working directory to `csel-lab7`, and `bash` executes the bash script `test.sh` which compiles and runs `ListExamplesTests.java`.
 ### Step4: Edit the code file to fix the failing test
 ![Image](screenshot4-2.png)  
 ![Image](screenshot4-1.png)  
 **Key pressed:** `vim Li<tab>.java<enter>` `r2` `:wq<enter>`  
 I typed `Li` to search for `ListExamples.java` and `ListExamples` pop out so I typed `.java` to complete it. For some reason the cursor was already on the character I needed to edit, so I directly pressed r2 to change "index1" to "index2."  
-`vim` opens the text editor that enables me to edit ListExamples.java, `r` replaces the original char 1 to 2, and `:wq` saves the file and quits the editor.
+`vim` opens the text editor that enables me to edit `ListExamples.java`, `r` replaces the original char 1 to 2, and `:wq` saves the file and quits the editor.
 ### Step5: Run the tests, demonstrating that they now succeed
 ![Image](screenshot5.png)  
 **Key pressed:** `bash test.sh<enter>`  
@@ -28,7 +28,7 @@ This command runs the tests by running the bash script again.
 ![Image](screenshot6.png)  
 **Key pressed:** `Ctrl R` `add<enter>`  
 I searched for the command `git add ListExamples.java` I executed earlier in the command history.  
-This command adds updated ListExample.java to staging.  
+This command adds updated `ListExample.java` to staging.  
 **Key pressed:** `Ctrl R` `commi<enter>`  
 I searched for the command `git commit -m "change index1 to index2"` I executed earlier in the command history.  
 This command is used to commit my change.  
