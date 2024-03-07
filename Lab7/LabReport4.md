@@ -19,7 +19,7 @@ I named the forked repository as cse15l-lab7, so I typed `cs` and `<tab>` to sea
 ![Image](screenshot4-1.png)  
 **Key pressed:** `vim Li<tab>.java<enter>` `r2` `:wq<enter>`  
 I typed `Li` to search for `ListExamples.java` and `ListExamples` pop out so I typed `.java` to complete it. For some reason the cursor was already on the character I needed to edit, so I directly pressed `r2` to change `index1` to `index2`.  
-`vim` opens the text editor that enables me to edit `ListExamples.java`, `r` replaces the original char 1 to 2, and `:wq` saves the file and quits the editor.
+`vim` opens the text editor that enables me to edit `ListExamples.java`, `r` replaces the original char `1` to `2`, and `:wq` saves the file and quits the editor.
 ### Step5: Run the tests, demonstrating that they now succeed
 ![Image](screenshot5.png)  
 **Key pressed:** `bash test.sh<enter>`  
