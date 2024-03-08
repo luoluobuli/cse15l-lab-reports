@@ -18,7 +18,7 @@ Type `run`, and then keep doing `step` with `print rear` after each step to keep
 Then you might be able to find the logic mistake in your code.
 
 ### Student's update:
-I tried the command you suggested and get the following output (sorry if it's hard to read; I cannot change my system's language so the terminal is Chinese) (I cannot understand these Chinese as well):  
+I tried the command you suggested and get the following output (sorry if it's hard to read; I cannot change my system's language so the terminal is Chinese) (myself cannot understand these Chinese words):  
 
 ![image](fix1.png)  
 ![image](fix2.png)  
