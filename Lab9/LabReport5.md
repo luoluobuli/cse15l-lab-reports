@@ -1,3 +1,4 @@
+## Part 1 - Debugging Scenario
 ### Student's post:
 I'm writing the method `removeLast` in `MyDeque` class and it failed the test when I ran my bash script, with error message shown in my screenshot. I also provided the code and script I wrote below. I guess that the rear is not updated correctly, but I couldn't find the bug. How should I fix my code?  
 **Error message:**  
@@ -23,3 +24,20 @@ Type `run`, and then keep doing `step` with `print rear` after each step to keep
 Then you might be able to find the logic mistake in your code.
 
 ### Student's update:
+I tried the command you suggested and get the following output (sorry if it's hard to read; I cannot change my system's language so the terminal is Chinese):  
+
+![image](fix1.png)  
+![image](fix2.png)  
+I realized that the rear was reduced from 1 to 0 because the code lacked the scenario of removing the last element from the array. Since there's no element in the array, it shouldn't execute `rear--` and reduce one index of the rear. To fix this, I added the situation when size is 0 after removal.  
+
+![image](fix3.png)  
+I passed the test. 
+
+![image](fix4.png)  
+The bug is fixed!  
+
+ps. This was a real bug I met in CSE 12 and I couldn't find it until I asked for TA's help! I feel like jdb would definitely be a useful tool to understand what's going on inside the method and quickly address the bug!
+
+## Part 2 - Reflection
+I think the grading script is definitely one of the most interesting things I learned this quarter (although I can't write it well). I'm taking CSE 12 and using Gradescope to submit my programming assignments, and I always find it fun that the autograder just automatically catches everything in my code and gives a grade. However, writing script is kind of a difficult thing to me mostly because lack of practice I guess. I couldn't remember the syntax of bash script and I had to look it up online for every step I wrote, which was kind of frustrating. I do need more practice to get familiar with the concepts we talked about in this class.
+I feel like CSE 15l is a fun class and I'd recommand people to take it, though I heard that it will be replaced by CSE 29 :( Hope it would be as fun as CSE 15l!
