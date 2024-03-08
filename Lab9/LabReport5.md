@@ -42,7 +42,7 @@ The bug is fixed!
 **Command line that triggers that bug:**  
 `bash test.sh`  
 **Description of fixing the bug:**  
-Add the situation that `size == 1` after removal. If that's the case, return `result`, instead of deducting one index of `rear`.
+Add the situation when `size == 1` after removal. If that's the case, return `result`, instead of deducting one index of `rear`.
 
 ps. This was a real bug I met in CSE 12 and I couldn't find it until I asked for TA's help! I feel like jdb would definitely be a useful tool to understand what's going on inside the method and quickly address the bug!
 
