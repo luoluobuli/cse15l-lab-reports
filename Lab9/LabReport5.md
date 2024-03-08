@@ -1,6 +1,6 @@
 ## Part 1 - Debugging Scenario
 ### Student's post:
-I'm writing the method `removeLast` in `MyDeque` class and it failed the test when I ran my bash script, with error message shown in my screenshot. I guess that rear is not updated correctly, but I couldn't find the bug. How should I fix my code?  
+I'm writing the method `removeLast` in `MyDeque` class and it failed the test when I ran my bash script, with error message shown in the screenshot. I guess that rear is not updated correctly, but I couldn't find the bug. 
 **Error message:**  
 ![image](error.png)  
 
