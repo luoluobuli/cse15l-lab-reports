@@ -3,7 +3,7 @@ I'm writing the method `removeLast` in `MyDeque` class and it failed the test wh
 **Error message:**  
 ![image](error.png)  
 **Code:**  
-![image](code.png)  
+![image](codeNew.png)  
 **Test:**  
 ![image](test.png)  
 **Bash script:**  
@@ -13,10 +13,13 @@ I'm writing the method `removeLast` in `MyDeque` class and it failed the test wh
 
 ### TA's reply:
 You can try use `jdb` to help you find the bug. Use it to check `removeLast` step by step to see what is happening inside the method.  
-First, compile it using the command
-`javac -g -cp ".;libs\junit-4.13.2.jar;libs\hamcrest-2.2.jar" CustomTester.java`  
-Then, run it with jdb
-`jdb -classpath ".;libs\junit-4.13.2.jar;libs\hamcrest-2.2.jar" org.junit.runner.JUnitCore CustomTester`
+Here's the commands you can try:
+```
+$javac -g -cp ".;libs\junit-4.13.2.jar;libs\hamcrest-2.2.jar" CustomTester.java
+$jdb -classpath ".;libs\junit-4.13.2.jar;libs\hamcrest-2.2.jar" org.junit.runner.JUnitCore CustomTester
+```
+Then, set the stop point `stop at CustomTester:30` to look inside your method.  
+Type `run`, and then keep doing `step` with `print rear` after each step to keep track of the variable.  
+Then you might be able to find the logic mistake in your code.
 
-
-There's a class MyDeque and a method removeLast() in it. I have a tester class CustomTester and I call removeLast() in one of my tests. Now I want to use jdb to check inside removeLast() to see what is happening step by step. What should I do?
+### Student's update:
