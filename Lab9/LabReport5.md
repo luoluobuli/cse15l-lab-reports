@@ -3,6 +3,8 @@
 I'm writing the method `removeLast` in `MyDeque` class and it failed the test when I ran my bash script, with error message shown in the screenshot. I guess that rear is not updated correctly, but I couldn't find the bug.  
 **Error message:**  
 ![image](error.png)  
+**Bash script:**  
+![image](bash.png)  
 
 ### TA's reply:
 You can try use `jdb` to help you find the bug. Use it to check `removeLast` step by step to see what is happening inside the method.  
