@@ -8,6 +8,8 @@ I'm writing the method `removeLast` in `MyDeque` class and it failed the test wh
 **My code and test:**  
 ![image](codeNew.png)  
 ![image](test.png)  
+**Directory Structure:**  
+![image](structure.png)  
 
 ### TA's reply:
 You can try use `jdb` to help you find the bug. Use it to check `removeLast` step by step to see what is happening inside the method.  
