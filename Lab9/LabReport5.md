@@ -37,13 +37,65 @@ The bug is fixed!
 
 ### Wrap-up  
 **Directory structure:**  
-![image](structure.png)  
+```
+- cse15l-lab9-temp
+  - libs
+    - hamcrest-2.2.jar
+    - junit-4.13.2.jar
+  - CustomTester.class
+  - CustomTester.java
+  - DequeInterface.class
+  - DequeInterface.java
+  - grade.sh
+  - MyDeque.class
+  - MyDeque.java
+```
 **Code with bug:**  
-![image](codeNew.png)  
+```
+@SuppressWarnings("unchecked")
+public E removeLast() {
+  if (size == 0) {
+    return null;
+  }
+  E result = (E)data[rear];
+  data[rear] = null;
+  size--;
+  if (rear == 0) {
+    rear = data.length-1;
+  } else {
+    rear--;
+  }
+  return result; 
+}
+```
 **Test:**  
-![image](test.png)  
+```
+@Test
+public void testRemoveLastElem() {
+  myDeque = new MyDeque<>(10);
+  myDeque.addLast(2);
+  myDeque.addLast(3);
+  assertEquals(Integer.valueOf(2), myDeque.removeFirst());
+  assertArrayEquals(
+    new Integer[]{null,3,null,null,null,null,null,null,null,null}, myDeque.data);
+  assertEquals(1, myDeque.front);
+  assertEquals(1, myDeque.rear);
+  assertEquals(1, myDeque.size);
+  assertEquals(10, myDeque.data.length);
+  assertEquals(Integer.valueOf(3), myDeque.removeLast());
+  assertArrayEquals(
+    new Integer[]{null,null,null,null,null,null,null,null,null,null}, myDeque.data);
+  assertEquals(1, myDeque.front);
+  assertEquals(1, myDeque.rear);
+  assertEquals(0, myDeque.size);
+  assertEquals(10, myDeque.data.length);
+}
+```
 **Bash script:**  
-![image](bash.png)  
+```
+javac -cp ".;libs\junit-4.13.2.jar;libs\hamcrest-2.2.jar" CustomTester.java
+java -cp ".;libs\junit-4.13.2.jar;libs\hamcrest-2.2.jar" org.junit.runner.JUnitCore CustomTester
+```
 **Command line that triggers that bug:**  
 `bash test.sh`  
 **Description of fixing the bug:**  
